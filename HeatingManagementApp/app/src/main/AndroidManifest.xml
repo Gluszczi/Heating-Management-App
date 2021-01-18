@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.contestapp">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.heatingmanagementapp.MonitorActivity"
+            android:label="Monitor Activity"
+            android:parentActivityName="com.example.heatingmanagementapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.AddRoomActivity"
+            android:label="Room creation"
+            android:parentActivityName="com.example.heatingmanagementapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.ScheduleDateManagementActivity"
+            android:label=""
+            android:parentActivityName="com.example.heatingmanagementapp.ScheduleManagementActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.ScheduleManagementActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.ScheduleManagementActivity"
+            android:label=""
+            android:parentActivityName="com.example.heatingmanagementapp.ScheduleActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.ScheduleActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.ScheduleActivity"
+            android:label="Schedule Management"
+            android:parentActivityName="com.example.heatingmanagementapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.GroupActivity"
+            android:label=""
+            android:parentActivityName="com.example.heatingmanagementapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.GroupManagementActivity"
+            android:label="Group Management"
+            android:parentActivityName="com.example.heatingmanagementapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.RoomsActivity"
+            android:label=""
+            android:parentActivityName="com.example.heatingmanagementapp.GroupActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.heatingmanagementapp.GroupActivity" />
+        </activity>
+        <activity
+            android:name="com.example.heatingmanagementapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

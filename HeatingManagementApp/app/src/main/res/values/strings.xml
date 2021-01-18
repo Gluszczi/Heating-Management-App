@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Heating Management App</string>
+    <string name="tempValue">insert temp</string>
+    <string name="roomName">insert room name</string>
+    <string name="roomId">insert Id</string>
+    <string name="submitBtn">"Save "</string>
+    <string name="rooms">Temperature Management</string>
+    <string name="title_activity_rooms">RoomsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="createGroup">Create group</string>
+    <string name="title_activity_group_management">GroupManagementActivity</string>
+    <string name="insertGroupName">"Insert group name "</string>
+    <string name="manageGroup">Manage group</string>
+    <string name="manageGroups">Group Management</string>
+    <string name="Groups">Select group</string>
+    <string name="manualMode">manual mode active</string>
+    <string name="scheduleMode">schedule mode active</string>
+    <string name="manageSchedule">Manage schedule</string>
+    <string name="createSchedule">Create/modify schedule</string>
+    <string name="scheduleManagement">Schedule Management</string>
+    <string name="addDay">Add day</string>
+    <string name="insertNewTimeFrame">Insert new time frame</string>
+    <string name="rejectSchedule">Reject changes</string>
+    <string name="createScheduleForSelectedDay">Submit changes</string>
+    <string name="fromHourHint">start</string>
+    <string name="toHourHint">end</string>
+    <string name="setValueHint">value</string>
+    <string name="title_activity_add_room">AddRoomActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="createRoom">Create Room</string>
+    <string name="manualControl">manual</string>
+    <string name="scheduledControl">scheduled</string>
+    <string name="monitor">Temperature Monitor</string>
+    <string name="modes">Modes</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="main_logo">menu image</string>
+    <string name="calendar_image">calendar</string>
+</resources>
