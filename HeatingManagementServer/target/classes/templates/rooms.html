@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Room Management</title>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>Room name</th>
+        <th>Temp value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${rooms.empty}">
+        <td colspan="2"> No rooms available </td>
+    </tr>
+    <tr th:each="room : ${rooms}">
+        <td><span th:text="${room.name}"> Room name </span></td>
+        <td><span th:text="${room.temp}"> Temp value </span></td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="#" th:action="@{/home/rooms}" th:object="${room}" method="post">
+    <p class="text"><label>Room Id</label>  <input type="number" th:field="*{id}" /></p>
+    <p class="text"><label>Room name</label> <input type="text" th:field="*{name}" /></p>
+    <p class="text"><label>Temp value</label> <input type="number" th:field="*{temp}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /> </p>
+
+</form>
+
+
+
+</body>
+</html>

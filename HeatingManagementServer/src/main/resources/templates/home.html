@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Heating Management App Home Page</title>
+</head>
+<body>
+<div style="text-align: center">
+<img th:src="@{/images/homePageImage.jpg}" />
+</div>
+<div style="text-align: center">
+<h1 th:text = ${Welcome}></h1>
+</div>
+
+<div style="text-align: center">
+    <input  type="button" onclick="location.href='/home/rooms'" value="Login" >
+</div>
+
+
+</body>
+</html>
